@@ -367,6 +367,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="index.js"></script>
+    <script src="../styles/index.js"></script>
     </body>
 </html>
