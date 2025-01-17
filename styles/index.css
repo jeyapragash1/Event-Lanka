@@ -57,15 +57,12 @@ section {
     padding: 3rem 9%;
 }
 
-
-
 .heading {
     text-align: center;
     color: var(--primary-color);
     text-transform: uppercase;
     margin-top: 10rem;
     font-size: 5rem;
-    margin-top: 10rem;
 }
 
 .btn {
@@ -107,7 +104,7 @@ section {
     transition: .2s linear;
 }
 
-/* header */
+/* Header */
 
 .header {
     position: sticky;
@@ -120,7 +117,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 10px 10px;
-    background:var(--primary-color);
+    background: var(--primary-color);
     box-shadow: var(--box-shadow);
 }
 
@@ -146,7 +143,7 @@ section {
 .navbar {
     flex: 1;
     cursor: pointer;
-    align-items: flex-start,;
+    align-items: flex-start;
     justify-content: center;
     margin-left: 13rem;
     display: inline;
@@ -161,8 +158,8 @@ section {
     display: inline-block;
     position: relative;
     text-decoration: none;
-
 }
+
 .icons {
     display: inline-block;
     align-items: center;
@@ -176,11 +173,9 @@ section {
     margin-right: 4.5rem;
     cursor: pointer;
     overflow: hidden;
-    
 }
 
-
-.icons .user-avatar img{
+.icons .user-avatar img {
     width: 100%;
     height: 100%;
     align-items: center;
@@ -191,6 +186,7 @@ section {
     align-items: center;
     margin-left: .5rem;
 }
+
 .search-container input {
     padding: 1rem;
     border: 1px solid var(--primary-color);
@@ -205,7 +201,6 @@ section {
     cursor: pointer;
 }
 
-
 .mobile {
     display: none;
     align-items: center;
@@ -213,7 +208,6 @@ section {
 
 #close {
     display: none;
-
 }
 
 .mobile i:hover::after,
@@ -234,7 +228,7 @@ section {
     color: var(--main-color);
 }
 
-/* index page */
+/* Mobile View */
 @media (max-width: 991px) {
     .navbar {
         display: flex;
@@ -250,20 +244,22 @@ section {
         background-color: #e2e9e1;
         padding: 20px 0 0 10px;
         transition: 0.3s;
-        color:black;
+        color: black;
     }
 
     .navbar a {
         margin-bottom: 20px;
-        color:black;
+        color: black;
     }
 
     .navbar.active {
         right: 0px;
     }
-    .icons{
+
+    .icons {
         display: none;
     }
+
     .mobile {
         display: flex;
         align-items: center;
@@ -271,16 +267,12 @@ section {
 
     .mobile i {
         color: #fff;
-        font-size: 16px;
-        padding-left: 20px;
-        cursor: pointer;
-        display: flex;
         font-size: 2.5rem;
         margin-left: 1rem;
+        cursor: pointer;
     }
 
-
-     #close {
+    #close {
         display: initial;
         position: absolute;
         top: 10px;
@@ -294,14 +286,147 @@ section {
         font-size: 2.5rem;
         cursor: pointer;
         margin-left: 1rem;
-
     }
-
-    
 }
 
+@media (max-width: 768px) {
+    .header {
+        padding: 8px 15px;
+    }
 
+    .logo img {
+        width: 80px;
+        height: 90px;
+    }
+
+    .navbar {
+        width: 100%;
+        right: -100%;
+        padding: 30px 15px;
+    }
+
+    .navbar.active {
+        width: 100%;
+        right: 0;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .search-container {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .search-container input {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .search-container button {
+        width: 20%;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 0.6rem 2rem;
+        font-size: 1.4rem;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .mobile i {
+        font-size: 2rem;
+    }
+}
+
+/* sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss */
 /* index page end */
+
+@media (max-width: 768px) {
+    /* Footer Section */
+    .footer .box-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Header Section */
+    .header {
+        padding: 1.5rem 3%;
+    }
+    .header .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--white);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 1rem 0;
+        box-shadow: var(--box-shadow);
+    }
+    .header .navbar.active {
+        display: flex;
+    }
+    .header .navbar a {
+        margin: 1rem 0;
+        padding: 1rem 2rem;
+        width: 100%;
+        text-align: center;
+    }
+    .header .search-container {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .header .icons {
+        margin-top: 1rem;
+    }
+    .header .menu-icon {
+        display: block;
+    }
+
+    /* About Section */
+    .about__header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about__content {
+        grid-template-columns: 1fr; /* Stacks content vertically */
+    }
+    .about__grid {
+        grid-template-columns: 1fr; /* Stacks cards vertically */
+    }
+
+    /* Home Section */
+    .home {
+        grid-template-columns: 1fr; /* Stacks content vertically */
+    }
+    .home__image img {
+        max-width: 100%;
+        margin: auto;
+    }
+    .home .content {
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    /* General Spacing Adjustments */
+    .section__header {
+        font-size: 3rem; /* Smaller font for headings */
+    }
+    .section__heading {
+        font-size: 2.5rem; /* Adjust heading size */
+        margin-top: 1rem;
+    }
+    .section__description {
+        font-size: 1.5rem; /* Smaller font size for descriptions */
+    }
+}
+
 
 
 .dropdown {
@@ -674,7 +799,7 @@ color: var(--white);
     font-size: 1.5rem;
 
 }
-
+/* sssssssssssssdfghjkjhgfghjkljhgfghjkljhgfcghjklkjhgfghjklkjhgf */
 /* end */
 
 /* services */
