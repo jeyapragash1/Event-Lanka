@@ -31,16 +31,15 @@ $userName = $isLoggedIn ? $_SESSION['user_name'] : null;
     <link rel="stylesheet" href="styles/index.css">
     <style>
         .stars {
-    color: gold; /* Color of stars */
+    color: gold; 
 }
 
 .star {
-    font-size: 20px; /* Size of stars */
-}
+    font-size: 20px; 
 
 .star:hover,
 .star:hover ~ .star {
-    color: lightgray; /* Change color on hover */
+    color: lightgray; 
 }
 
     </style>
